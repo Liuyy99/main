@@ -371,6 +371,7 @@ Lists the doctors who has the specialisation of `general` and is free on 4th Oct
 
 // end::doctorcommands[]
 
+// tag::medicalhistorycommands[]
 === Adding a medical history: `add-med-hist`
 
 Adds a medical history +
@@ -493,6 +494,7 @@ Examples:
 
 * `select-med-hist 1` +
 Returns details of the medical history with index 1 in medical history list.
+// end::medicalhistorycommands[]
 
 // tag::appointment[]
 
@@ -764,9 +766,10 @@ e.g. `match-d s/acupuncture d/2019-06-02 t/09:00`
 * *Delete an existing doctor* : `delete-d INDEX` +
 eg. `delete-d 2`
 
+// tag::medhistsummary[]
 MEDICAL HISTORY COMMANDS
 
-* *Add a new medical history* :`add-med-hist pid/PATIENT_ID did/DOCTOR_ID d/DATE sw/SHORT_WRITEUP` +
+* *Add a new medical history* : `add-med-hist pid/PATIENT_ID did/DOCTOR_ID d/DATE sw/SHORT_WRITEUP` +
 e.g. `add-med-hist pid/1 did/7 d/2019-03-03 sw/Had a fever with sorethroat. Sleeps late.`
 * *List medical histories* : `list-med-hist [pid/PATIENT_ID] [did/DOCTOR_ID] [d/DATE]` +
 e.g. `list-med-hist d/2019-03-03`
@@ -776,8 +779,9 @@ e.g. `edit-med-hist 1 sw/The patient came this morning with high fever. In the a
 e.g. `sort-med-hist DESC`
 * *Search a medical history* : `search-med-hist KEYWORD` +
 e.g. `search-med-hist fever`
-* *Select a medical history* : `select-med-hist INDEX ` +
+* *Select a medical history* : `select-med-hist INDEX` +
 e.g. `select-med-hist 1`
+// end::medhistsummary[]
 
 // tag::appointmentsummary[]
 APPOINTMENT COMMANDS

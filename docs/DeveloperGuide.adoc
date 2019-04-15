@@ -219,6 +219,7 @@ The `Model`,
 * exposes an unmodifiable `ObservableList<Patient>` and `ObeservableList<Doctor>` that can be 'observed' e.g. the UI can be bound to this list so that the UI automatically updates when the data in the list change.
 * does not depend on any of the other three components.
 
+// tag::storagecomponent[]
 [[Design-Storage]]
 === Storage component
 
@@ -231,6 +232,7 @@ The `Storage` component,
 
 * can save `UserPref` objects in json format and read it back.
 * can save the DocX data in json format and read it back.
+// end::storagecomponent[]
 
 [[Design-Commons]]
 === Common classes
@@ -577,6 +579,7 @@ Aspect 1: Use user's input of the doctor's specialisation or use patient's tags 
 
 // end::doctorcommands[]
 
+// tag::medicalhistoryfeatures[]
 === Medical History Management Features
 
 ==== Current Implementation
@@ -628,6 +631,7 @@ Here, `SortMedHistCommandParser` checks the argument string is either "" or "ASC
 
 . The `LogicManager` then calls the execution of `SortMedHistCommand`, which interacts with Model component. In Model component, the internal list of medical histories in `UniqueMedHistList` is sorted.
 Through a `ListChangeListener`, Ui component is updated the changes of medical history list order. Then the sorted list of medical histories will be displayed in user interface.
+// end::medicalhistoryfeatures[]
 
 // tag::appointment[]
 

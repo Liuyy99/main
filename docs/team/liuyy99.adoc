@@ -64,7 +64,7 @@ https://github.com/nus-cs2103-AY1819S2/pe-dry-run/issues/527[#527], https://gith
 
 include::../UserGuide.adoc[tag=medicalhistorycommands]
 
-include::../UserGuide.adoc[tag=commandsummery]
+include::../UserGuide.adoc[tag=medhistsummary]
 
 == Contributions to the Developer Guide
 
